@@ -7,16 +7,17 @@ import exeptions.DuplicateModelException;
 import exeptions.NonExistantModelException;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Repository<T extends IModelable> implements IRepository {
-    private HashMap<String, T> itemsByModel;
+    private Map<String, T> itemsByModel;
 
     public Repository()
     {
         this.setItemsByModel(new HashMap<String, T>());
     }
 
-    protected HashMap<String, T> getItemsByModel() {
+    protected Map<String, T> getItemsByModel() {
         return this.itemsByModel;
     }
 

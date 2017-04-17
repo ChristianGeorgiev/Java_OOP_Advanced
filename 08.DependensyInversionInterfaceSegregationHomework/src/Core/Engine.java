@@ -34,7 +34,7 @@ public class Engine {
             Scanner scanner = new Scanner(System.in);
             String line = scanner.nextLine();
             String name = "";
-            List<String> parameters = new ArrayList<>();
+            List<String> parameters;
 
             if (line.equals("End")) {
                 break;

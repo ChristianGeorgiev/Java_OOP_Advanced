@@ -12,14 +12,14 @@ import java.util.List;
 public class Race implements IRace {
     private int distance;
     private int windSpeed;
-    private int oseanCurrentSpeed;
+    private int oceanCurrentSpeed;
     private Boolean allowsMotorBoats;
     private HashMap<String, MotorBoat> registeredBoats;
 
     public Race(int distance, int windSpeed, int oceanCurrentSpeed, Boolean allowsMotorBoats) {
         this.setDistance(distance);
         this.setWindSpeed(windSpeed);
-        this.setOseanCurrentSpeed(oceanCurrentSpeed);
+        this.setOceanCurrentSpeed(oceanCurrentSpeed);
         this.setAllowsMotorBoats(allowsMotorBoats);
         this.registeredBoats = new HashMap<String, MotorBoat>();
     }
@@ -44,11 +44,11 @@ public class Race implements IRace {
     }
 
     public int getOceanCurrentSpeed() {
-        return oseanCurrentSpeed;
+        return oceanCurrentSpeed;
     }
 
-    private void setOseanCurrentSpeed(int oseanCurrentSpeed) {
-        this.oseanCurrentSpeed = oseanCurrentSpeed;
+    private void setOceanCurrentSpeed(int oceanCurrentSpeed) {
+        this.oceanCurrentSpeed = oceanCurrentSpeed;
     }
 
     public Boolean getAllowsMotorboats() {
