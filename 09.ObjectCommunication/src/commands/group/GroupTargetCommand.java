@@ -2,7 +2,6 @@ package commands.group;
 
 import commands.Command;
 import mediator.AttackGroup;
-import models.Target;
 import observer.ObservableTarget;
 
 public class GroupTargetCommand implements Command {

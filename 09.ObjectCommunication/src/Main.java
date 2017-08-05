@@ -2,8 +2,6 @@ import commandExecutors.CommandExecutor;
 import commandExecutors.Executor;
 import commands.group.GroupAttackCommand;
 import commands.group.GroupTargetCommand;
-import commands.individual.AttackCommand;
-import commands.individual.TargetCommand;
 import loggers.CombatLogger;
 import loggers.EventLogger;
 import loggers.Logger;
@@ -11,7 +9,6 @@ import mediator.AttackGroup;
 import mediator.Group;
 import models.Attacker;
 import models.Dragon;
-import models.Target;
 import models.Warrior;
 import observer.ObservableTarget;
 
